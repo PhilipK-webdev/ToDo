@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Antonio', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 95vh;
+    background: #F7F7F7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container__header {
+    height: 10vh;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    background-color: #c1c1c1;
+    color: white;
+    font-family: 'Antonio';
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.container__main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1vh;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.container__dropZone {
+    flex: 20% 1;
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    background: #E0E0E0;
+}
+
+.container__deleteZone {
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    background-color: white;
+}
+
+.container__dragZone {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    background: #E0E0E0;
+}
+
+.container__addItem {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.container__addItem>label {
+    display: flex;
+    align-self: center;
+    margin-right: 1vw;
+    font-family: 'Antonio';
+    font-size: 1vw;
+}
+
+.container__addItem>input[type="text"] {
+    width: 25vw;
+    height: 3vh;
+    padding-left: 5px;
+    border: none;
+    font-size: 1.2vw;
+    font-family: 'Antonio';
+
+}
+
+.container__addItem>input[type="text"]:focus {
+    outline: none;
+}
+
+
+.container__addItem>input[type="text"]::placeholder {
+    padding-left: 5px;
+}
+
+.container__addItem>input[type="submit"] {
+    border: none;
+    width: 2vw;
+    height: 3.5vh;
+    color: white;
+    font-family: 'Antonio';
+    font-size: 1vw;
+    background: #D61969;
+    cursor: pointer;
+}

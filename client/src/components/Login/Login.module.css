@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Antonio', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+}
+
+.container {
+    margin-top: 10vh;
+    margin-bottom: 20;
+    margin-left: auto;
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.form {
+    width: inherit;
+    height: 35vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form__body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    font-family: 'Antonio';
+}
+
+.input_password,
+.input_username {
+    padding-bottom: 10px;
+    width: 28vw;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5vh;
+    border: 3px solid #C4C7CC;
+    box-sizing: border-box;
+    border-radius: 2.5vh;
+    font-size: 2.2vw;
+    cursor: pointer;
+    color: black;
+    font-family: 'Antonio';
+}
+
+.submit {
+    margin-top: 2vh;
+    height: 6vh;
+    width: 14vw;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border: none;
+    font-family: 'Antonio';
+    background-color: white;
+}
+
+
+.input_password::placeholder,
+.input_username::placeholder {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+.input_password:focus,
+.input_username:focus {
+    outline: none;
+}
