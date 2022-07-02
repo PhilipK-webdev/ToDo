@@ -16,7 +16,6 @@
 
 .container__header {
     height: 10vh;
-    border: 1px solid orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,23 +36,23 @@
     padding-right: 5px;
 }
 
-.container__dropZone {
-    flex: 20% 1;
+/* .container__dropZone {
+    flex: 40% 1;
     display: flex;
     justify-content: center;
     height: 75vh;
     background: #E0E0E0;
-}
+} */
 
-.container__deleteZone {
-    flex: 60%;
+.container__maintodo {
+    flex: 80%;
     display: flex;
     justify-content: center;
     height: 75vh;
     background-color: white;
 }
 
-.container__dragZone {
+.container__todo {
     flex: 20%;
     display: flex;
     justify-content: center;
@@ -94,13 +93,110 @@
     padding-left: 5px;
 }
 
-.container__addItem>input[type="submit"] {
+.container__addItem>div {
     border: none;
-    width: 2vw;
+    width: 3vw;
     height: 3.5vh;
     color: white;
     font-family: 'Antonio';
     font-size: 1vw;
     background: #D61969;
     cursor: pointer;
+    text-align: center;
+}
+
+.container__maintodo__card {
+    height: 60vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: thin;
+}
+
+.container__maintodo__card::-webkit-scrollbar {
+    width: 5px;
+}
+
+.container__maintodo__card::-webkit-scrollbar-track {
+    background-color: #D61969;
+}
+
+
+.container__maintodo__card__body {
+    margin-top: 1vh;
+    border: 1px solid #E0E0E0;
+    font-size: 2vw;
+    padding: 5px;
+    width: 90%;
+    text-align: center;
+    font-family: 'Antonio';
+    cursor: grab;
+}
+
+.container__maintodo__edit {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container__maintodo__edit__icon {
+    position: relative;
+    font-size: 1.5vw;
+    margin-left: 14vw;
+    cursor: pointer;
+}
+
+.container__maintodo__card__body__textearea {
+    width: 23vw;
+    height: 4vh;
+    font-size: 1.2vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: 'Antonio';
+}
+
+.container__maintodo__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container__maintodo__editBtn,
+.container__maintodo__deleteBtn,
+.container__maintodo__submitBtn,
+.container__maintodo__cancelBtn {
+    border: none;
+    width: 3vw;
+    height: 5.5vh;
+    color: white;
+    font-family: 'Antonio';
+    font-size: 1vw;
+    background: #D61969;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container__maintodo__buttons>.container__maintodo__submitBtn,
+.container__maintodo__cancelBtn {
+    width: 4vw;
+}
+
+textarea::placeholder {
+    padding-left: 10px;
+    text-align: left;
+    padding-top: 5px;
+    font-family: 'Antonio';
+}
+
+textarea:focus {
+    outline: none;
 }

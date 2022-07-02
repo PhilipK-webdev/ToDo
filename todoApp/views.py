@@ -59,7 +59,6 @@ def taskCreate(request):
 def taskUpdate(request, pk):
     task = List.objects.get(id=pk)
     serializer = ListSerializer(instance=task, data=request.data)
-
     if serializer.is_valid():
         serializer.save()
 
