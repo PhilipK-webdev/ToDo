@@ -22,12 +22,16 @@ MEDIA_URL = '/api/'
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# SECRET_KEY=django-insecure-aul+$wbv6y%agsn8*dkh_7n@l2qa8u$lieka_3561mmkccdr3p
+SECRET_KEY = os.environ.get(
+    'DJANGO_SECRET_KEY', 'django-insecure-aul+$wbv6y%agsn8*dkh_7n@l2qa8u$lieka_3561mmkccdr3p')
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+DEBUG = os.getenv('DJANGO_DEBUG', '') != 'False'
+
+ALLOWED_HOSTS = ['127.0.0.1', 'deploy-project-todo.herokuapp.com']
 
 
 # Application definition

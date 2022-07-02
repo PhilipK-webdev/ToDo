@@ -1,3 +1,3 @@
 release:python manage.py makemigrations --no-input
 release:python manage.py migrate --no-input
-web:gunicorn todo.wsgi
+web: gunicorn todo.wsgi --log-file -
