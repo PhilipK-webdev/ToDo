@@ -29,9 +29,10 @@ SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY', 'django-insecure-aul+$wbv6y%agsn8*dkh_7n@l2qa8u$lieka_3561mmkccdr3p')
 DEBUG = True
 
-DEBUG = os.getenv('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'deploy-project-todo.herokuapp.com']
+ALLOWED_HOSTS = ['.localhost', '127.0.0.1',
+                 'deploy-project-todo.herokuapp.com']
 
 
 # Application definition
