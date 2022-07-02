@@ -50,7 +50,10 @@ function Main() {
         });
         if (response.ok) {
             setIsUpdateDB(true);
+
             setData([...data, todo].sort((a, b) => b.id - a.id));
+            const completed = data.map(task => task.completed);
+            setCompletedArray([...completed]);
             setItem("");
         }
         else console.log("error")
