@@ -17,3 +17,7 @@ class User(models.Model):
 
     def __str__(self):
         return self.item
+
+
+class Meta:
+    db_table = 'Todos'
